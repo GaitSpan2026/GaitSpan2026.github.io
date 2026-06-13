@@ -58,8 +58,8 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 
-  <meta property="og:image" content="https://lecar-lab.github.io/FIRM-humanoid/static/images/hero_static.gif" />
-  <meta property="og:image:secure" content="https://lecar-lab.github.io/FIRM-humanoid/static/images/hero_static.gif" />
+  <meta property="og:image" content="https://lecar-lab.github.io/GaitSpan-humanoid/static/images/hero_static.gif" />
+  <meta property="og:image:secure" content="https://lecar-lab.github.io/GaitSpan-humanoid/static/images/hero_static.gif" />
 </head>
 
 <section class="hero is-link is-fullheight video">
@@ -184,58 +184,58 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
-          <em>Autonomous</em> Fall Damage Mitigation and Recovery
+           Gait Emergence and Transition via a <em>single</em> Policy
         </h2>      
-          <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">1) We evaluate <strong style="color: #13c253; font-weight: 800;">FIRM</strong> under different types of terrains: <strong style="color: darkgreen; font-weight: 800;">Grass, Red-Soil Slope, Form, and Irregular debris</strong>. <strong style="color: #13c253; font-weight: 800;">FIRM</strong>  is also robust under perturbation with deformable payload. </p>
+<!--           <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">We evaluate <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> under different types of  <strong style="color: darkblue; font-weight: 800;">speeds</strong>, <strong style="color: darkgreen; font-weight: 800;">terrains</strong>, and <strong style="color: orange; font-weight: 800;">embodiments</strong>. 
+             <br>
+           <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong>  is also robust under various perturbations like heavy payload, and low-friction shoes that induce slippery contacts. </p> -->
+               <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
+                <span style="display: inline-block; text-align: left;">
+                  We evaluate <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> under different types of 
+                  <strong style="color: darkblue; font-weight: 800;">speeds</strong>, 
+                  <strong style="color: darkgreen; font-weight: 800;">terrains</strong>, and 
+                  <strong style="color: orange; font-weight: 800;">embodiments</strong>.
+                  All gaits in real world emerge from learning fully in simulation by using a readily available walking policy as the seed for growing new skills, without relying on human demos, or multi-expert learning with gait labels.
+                </span>
+              </p>
+              
             <div class="columns">
               <div class="column has-text-centered">
-                <video autoplay muted loop playsinline controls preload="auto" 
-                       src="./static/videos/12-outdoor-uneven.mov" 
+                <video autoplay loop playsinline controls preload="auto" 
+                       src="./static/videos/gs-main-teaser.mov" 
                        width="100%" style="border-radius:10px;">
                  </video>
               </div>
             </div>
+            </p> 
+               <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
+                <span style="display: inline-block; text-align: left;">
+                  <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> is also robust under various perturbations, like heavy payloads and low-friction shoes that induce slippery contacts. 
+                </span>
+              </p>
             <div class="columns is-centered">
               <div class="column has-text-centered">
                 <video autoplay muted loop playsinline controls preload="auto" 
-                       src="./static/videos/12-indoor-uneven.mov" 
+                       src="./static/videos/payload-weight.mov" 
                        width="100%" style="border-radius:10px;">
                 </video>
+                <p style="margin-top: 0.5rem; font-size: 0.95rem;">
+                    <strong>(a)</strong> Heavy payload & low-friction shoes perturbation.
+                </p>
+
               </div>
               <div class="column has-text-centered">
                 <video autoplay muted loop playsinline controls preload="auto" 
-                       src="./static/videos/12-indoor-payload.mov" 
+                       src="./static/videos/w_payload_shoes.mov" 
                        width="100%" style="border-radius:10px;">
                 </video>
+                <p style="margin-top: 0.5rem; font-size: 0.95rem;">
+                    <strong>(b)</strong> Acceleration from 0.5 m/s to 2.5 m/s under perturbations.
+                </p>
               </div>
             </div>
         
             <p> 
-            <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">2) We compare the performance of <strong style="color: #13c253; font-weight: 800;">FIRM</strong> with <strong style="color: #e63946; font-weight: 800;"> FIRM wo Online Adapter</strong> to better evaluate context-awareness. </p>  
-          <!-- Row 1 -->
-          <div class="columns is-vcentered">
-            <!-- Left: FIRM w/o Online Adapter -->
-            <div class="column has-text-centered">
-              <h3 class="title is-3" style="margin-bottom: 10px; font-size: x-large;">
-                FIRM w/o Online Adapter
-              </h3>
-              <video autoplay muted loop playsinline controls preload="auto"
-                     src="./static/videos/no-adapt.mov"
-                     style="width: 100%; border-radius:10px;">
-              </video>
-            </div>
-
-            <!-- Right: FIRM (Ours) -->
-            <div class="column has-text-centered">
-              <h3 class="title is-3" style="margin-bottom: 10px; font-size: x-large;">
-                FIRM (Ours)
-              </h3>
-              <video autoplay muted loop playsinline controls preload="auto"
-                     src="./static/videos/adapt.mov"
-                     style="width: 100%; border-radius:10px;">
-              </video>
-            </div>
-          </div>
       </div> 
     </div>
   </div>
@@ -294,7 +294,7 @@
           Fall Damage Mitigation
         </h2>
         <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
-          We compare the quantitative performance of <strong style="color: #13c253; font-weight: 800;">FIRM</strong> with two <strong style="color: #e63946; font-weight: 800;">baselines</strong> that uses <em>passive control when fall happens (i.e., Freezing Mode) and pure tracking (i.e., sparse key-frame tracking)</em>, on the simulator.
+          We compare the quantitative performance of <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> with two <strong style="color: #e63946; font-weight: 800;">baselines</strong> that uses <em>passive control when fall happens (i.e., Freezing Mode) and pure tracking (i.e., sparse key-frame tracking)</em>, on the simulator.
         </p> 
               <div class="column">
               <!--   <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"></h3> -->
@@ -320,7 +320,7 @@
           Fall Recovery
         </h2>
         <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
-          1) We evaluate real-world performance of <strong style="color: #13c253; font-weight: 800;">FIRM</strong> on different terrian environments.
+          1) We evaluate real-world performance of <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> on different terrian environments.
         </p>        
         <tr>
           <td>
@@ -345,7 +345,7 @@
             <br>
             
         <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
-          2) We compare the real-world performance of <strong style="color: #13c253; font-weight: 800;">FIRM</strong> with a <strong style="color: #e63946; font-weight: 800;"> baseline</strong> that uses given trajectory (i.e., Unitree G1 Controller) on outdoor environments. </p>  
+          2) We compare the real-world performance of <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> with a <strong style="color: #e63946; font-weight: 800;"> baseline</strong> that uses given trajectory (i.e., Unitree G1 Controller) on outdoor environments. </p>  
           <div class="columns is-vcentered">
             <div class="column has-text-centered">
               <h3 class="title is-2" style="margin-bottom: 10px; font-size: x-large;">
@@ -358,7 +358,7 @@
             </div>
             <div class="column has-text-centered">
               <h3 class="title is-2" style="margin-bottom: 10px; font-size: x-large;">
-                FIRM (Ours)
+                GaitSpan (Ours)
               </h3>
               <video autoplay muted loop playsinline controls preload="auto"
                      src="./static/videos/ours-wave-1.mov"
@@ -376,99 +376,179 @@
 
 
 <section class="section">
-  <div class="container" style="max-width: 960px; margin: 0 auto;">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-two-thirds">
-        <h2 class="title is-2">Abstract</h2>
-        <div class="content has-text-justified">
-          <p> Falling is an inherent risk of humanoid mobility. Maintaining stability is thus a primary safety focus in robot control and learning, yet no existing approach fully averts loss of balance.When instability does occur, prior work addresses only isolated aspects of falling: avoiding falls, choreographing a controlled descent, or standing up afterward.  Consequently, humanoid robots lack integrated strategies for impact mitigation and prompt recovery when real falls defy these scripts.
-          <span class="method" style="color: darkred;">We aim to go beyond keeping balance to make the entire fall-and-recovery process safe and autonomous</span> : prevent falls when possible, reduce impact when unavoidable, and stand up when fallen. By fusing sparse human demonstrations with reinforcement learning and an adaptive diffusion-based memory of safe reactions, we learn whole-body behaviors that unify fall prevention, impact mitigation, and rapid recovery in one policy.
-          Experiments in simulation and on a Unitree G1 demonstrate robust sim-to-real transfer, lower impact forces, and consistently fast recovery across diverse disturbances, pointing toward safer, more resilient humanoids in real environments.
-          </p>
-        </div>
+  <div class="container" style="max-width: 1024px; margin: 0 auto;">
+    <div style="
+      background-color: #f1f1f1;
+      padding: 28px 34px;
+      border-radius: 0px;
+    ">
+      <h2 class="title is-2" style="
+        text-align: left;
+        margin-bottom: 1.4rem;
+        font-weight: 600;
+        color: #4a4a4a;
+      ">
+        Abstract
+      </h2>
+
+      <div class="content has-text-justified" style="
+        font-size: 1.02rem;
+        line-height: 1.65;
+        color: #4a4a4a;
+      ">
+        <p>
+          Current approaches often obtain gait diversity by prescribing gait schedules,
+          imitating motion clips, training experts to switch between or distilling skills into
+          one policy. These strategies can produce impressive behaviors, but offer limited
+          flexibility across continuous speed commands, terrains, and morphologies.
+
+          We study skill growth with
+          <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong>,
+          a framework that expands a pretrained, basic walking policy into faster locomotion.
+          It treats walking as a seed skill: reusable motor structure for balance, support,
+          body coordination, and contact transition that can be regenerated at new rhythms,
+          extended into longer/higher strides, and corrected by residual adaptation.
+
+          This expansion has three aspects:
+          1) <span style="color: #6b8e23; font-weight: 700;">rhythm generation</span>,
+          which modulates the frozen walking policy with multiple internal clocks and learns
+          command-conditioned combinations of the resulting canonical actions;
+          2) <span style="color: #6b8e23; font-weight: 700;">stride shaping</span>,
+          which rewards dynamic locomotion patterns appropriate for higher commanded speeds
+          using a physically grounded objective inspired by spring-loaded inverted pendulum
+          dynamics; and
+          3) <span style="color: #6b8e23; font-weight: 700;">residual adaptation</span>,
+          which captures motion details not accounted for by rhythm generation or stride shaping.
+
+          GaitSpan is the first to deliver a single command-conditioned humanoid policy that
+          spans walking, jogging, and running-like regimes covering a continuous speed range,
+          transfers across morphologies, and deploys zero-shot on unseen sim-to-sim and
+          real-world terrains.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
+<section class="section">
+  <div class="container" style="max-width: 1024px; margin: 0 auto;">
+
+    <h2 class="title is-2" style="
+      text-align: left;
+      margin-bottom: 1.2rem;
+      color: #4a4a4a;
+      font-weight: 600;
+    ">
+      Method Overview
+    </h2>
+
+    <div class="has-text-centered" style="margin-bottom: 1.2rem;">
+      <img src="./static/images/gs-framework-overview.png"
+           alt="GaitSpan method overview"
+           style="width: 100%; max-width: 980px;" />
+    </div>
+
+    <div class="content has-text-justified" style="
+      font-size: 1.02rem;
+      line-height: 1.65;
+      color: #4a4a4a;
+    ">
+      <p>
+        <strong>Framework Overview.</strong>
+        Starting from a frozen walking policy as the seed,
+        <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong>
+        expands locomotion through three components.
+        <span style="color: #6b8e23; font-weight: 700;">GaitWave</span>
+        grows rhythm through hierarchical composition of seed-derived action waves,
+        <span style="color: #6b8e23; font-weight: 700;">H-SLIP</span>
+        shapes dynamic stride events, and a
+        <span style="color: #6b8e23; font-weight: 700;">residual branch</span>
+        supplies additional adaptation. Together, they yield a single command-conditioned policy
+        spanning walking-, jogging-, and running-like regimes.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
 <section class="section">
-  <div class="container" style="max-width: 960px; margin: 0 auto;">
-    <h2 class="title is-2" style="text-align: center;">Method</h2>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-two-thirds">
-        <div class="content has-text-justified">
+  <div class="container" style="max-width: 1024px; margin: 0 auto;">
+
+    <h2 class="title is-2" style="
+      text-align: left;
+      margin-bottom: 1.2rem;
+      color: #4a4a4a;
+      font-weight: 600;
+    ">
+      Why Grow Skills?
+    </h2>
+
+    <div class="columns is-vcentered is-centered">
+
+      <!-- Left: Text -->
+      <div class="column is-half">
+        <div class="content has-text-justified" style="
+          font-size: 1.02rem;
+          line-height: 1.65;
+          color: #4a4a4a;
+        ">
           <p>
-             We present <span class="method" style="color: green;">FIRM</span>, (short for <span class="method" style="color: darkred;">F</span>all m<span class="method" style="color: darkred;">i</span>tigation and <span class="method" style="color: darkred;">r</span>ecovery from a few human de<span class="method" style="color: darkred;">m</span>onstrations), a control policy for the diverse, complex dynamics of humanoid falling and recovery.  FIRM unifies fall mitigation and recovery in a single framework that balances <span class="method" style="color: darkred;">safety</span> and <span class="method" style="color: darkred;">behavioral diversity</span>.  It operates in two stages:
-             </p>
-            1) Skill priors: a few human demonstrations are fitted and retargeted to the G1 humanoid, then sparsified into key frames.  These seed skills are expanded with RL-based augmentation and post-stitching to produce diverse, damage-reducing trajectories.  
-            </p>
-            2) Adaptive memory: the enriched trajectories are distilled into a diffusion model and paired with a lightweight adapter that enables real-time fall mitigation and recovery across varied conditions.
+            Locomotion is how a body carries itself through the world by regulating
+            contact, balance, and momentum. In humans, walking, jogging, and running
+            are not isolated behaviors, but related regimes of a growing motor skill.
+            This suggests a broader view of skill acquisition: new behaviors could be
+            reused and extended from existing motor structure, rather than be learned from scratch.
+          </p>
+
+          <p>
+            <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong>
+            makes walking-to-jogging-to-running a concrete demonstration of skill growth
+            in humanoid learning. Existing skills serve not only as endpoints, but as
+            seed priors for growing behavior families. This could point to a higher-performing,
+            more robust, and more scalable route for humanoid skill acquisition.
           </p>
         </div>
       </div>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-three-thirds">
-        <div class="content has-text-justified">
-          <!-- <ol type="a">
-            There are two steps within the <span class="method" style="color: darkred;">FIRM</span> framework:
-              <ol>
-                <li><strong>Two-Agent Joint Training with Whole-Body Proprioception</strong>:  <br>Two agents, each assigned distinct sub-tasks, are jointly trained using shared whole-body proprioception signals. During training, randomized 3D external forces—bounded by the upper-body joint torque limits—are applied to the end-effectors to encourage robust coordination;</li>
-                <li><strong>External Disturbance Handling via Force Perturbation</strong><br> The agents learn to maintain task performance under force perturbations, developing complementary behaviors to counteract disturbances and achieve stable loco-manipulation.</li>
-              </ol> -->
-        </div>
+
+      <!-- Right: Placeholder Image -->
+      <div class="column is-half has-text-centered">
+        <img src="./static/images/gs-positioning.png"
+             alt="Skill growth positioning"
+             style="
+               width: 100%;
+               max-width: 460px;
+               border-radius: 10px;
+             " />
+
+        <p style="
+          margin-top: 0.6rem;
+          font-size: 0.95rem;
+          color: #666;
+          line-height: 1.4;
+        ">
+           <strong>The conceptual framework differences with Current Methodologies</strong>. 
+        </p>
       </div>
+
     </div>
-    <div class="columns is-centered">
-      <div class="column is-four-fifth has-text-centered">
-        <img src="./static/images/firm-overview.png" alt="" style="width: 67%;" />
-      </div>
-    </div>
+
+  </div>
+</section>
+
+
 
     
-<section class="section">
-  <div class="container" style="max-width: 960px; margin: 0 auto;">
-    <h2 class="title is-2" style="text-align: center;">Adaptive safe control - lightweight online adapter</h2>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-two-thirds">
-        <div class="content has-text-justified">
-          <p>
-            During inference, the adapter uses
-            the history of observations to dynamically predict a feature and match with
-            a key-frame goal feature in the code-book, and then pass the matched goal
-            feature into the diffusion model to guide the process with context-awareness.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-three-thirds">
-        <div class="content has-text-justified">
-          <!-- <ol type="a">
-            There are two steps within the <span class="method" style="color: darkred;">FIRM</span> framework:
-              <ol>
-                <li><strong>Two-Agent Joint Training with Whole-Body Proprioception</strong>:  <br>Two agents, each assigned distinct sub-tasks, are jointly trained using shared whole-body proprioception signals. During training, randomized 3D external forces—bounded by the upper-body joint torque limits—are applied to the end-effectors to encourage robust coordination;</li>
-                <li><strong>External Disturbance Handling via Force Perturbation</strong><br> The agents learn to maintain task performance under force perturbations, developing complementary behaviors to counteract disturbances and achieve stable loco-manipulation.</li>
-              </ol> -->
-        </div>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-four-fifth has-text-centered">
-        <img src="./static/images/adapt.png" alt="" style="width: 50%;" />
-      </div>
-    </div>
-  </section>
+
     
   <section class="section" id="BibTeX">
     <div class="container content">
       <h2 class="titile">BibTeX</h2>
-      <pre><code>@article{anonymous2025firm,
-        title={FIRM},
+      <pre><code>@article{anonymous2026GaitSpan,
+        title={GaitSpan},
         author={anonymous},
         journal={},
-        year={2025}
+        year={2026}
       }</code></pre>
     </div>
   </section>
