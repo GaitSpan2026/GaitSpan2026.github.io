@@ -241,138 +241,184 @@
   </div>
 </section>
 
+<style>
+  .gait-section-container {
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+
+  .gait-row-title {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  .video-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+  }
+
+  .video-card video {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .video-title {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 2;
+    padding: 2px 6px;
+    background: rgba(255, 255, 255, 0.68);
+    color: #222;
+    font-size: 20px;
+    line-height: 1.1;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .video-title {
+      font-size: 15px;
+    }
+  }
+</style>
+
 <section class="section">
-  <div class="container" style="max-width: 960px; margin: 0 auto;">
+  <div class="container gait-section-container">
+
+    <h2 class="title is-2" style="text-align: center; padding-bottom: 20px;">
+      More Examples of Emergent Gaits
+    </h2>
+
+    <!-- Walking/Jogging -->
+    <h3 class="gait-row-title">
+      Walking/Jogging Gaits:
+    </h3>
+
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
-          Autonomous Fall Prevention
-        </h2>
-        <tr>
-          <td>
-            <!-- <div class="columns">
-              <div class="column has-text-centered">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Door-Opening</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/door_opening_fieldai_unmask.mp4" width="100%" style="border-radius:10px;"></video>
-              </div>
-            </div> -->      
-            <div class="columns"> <!-- Correct Bulma structure -->
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Sudden Outage (0.2s Zero-Torque)</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/real-prev-1.mov" width="100%" style="border-radius:10px;"></video>
-              </div>
-              <div class="column">
-                 <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Deformable Payload & Hitting with Ball</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/real-pb.mov" width="100%" style="border-radius:10px;"></video>
-              </div>
-            </div>
-            <br>
-            <div class="columns"> <!-- Correct Bulma structure -->
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Pushing towards the Slope</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/slope.mov" width="100%" style="border-radius:10px;"></video>
-              </div>
-              <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Pushing towards the Wall</h3>
-                <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/wall.mov" width="100%" style="border-radius:10px;"></video>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Walk through a Wave Field (~0.5 m/s)</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/t1_wave_05.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Fast Walk on Sandy Gravel Road (~0.7 m/s)</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/t1_sgr_07.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Jog on a Forest Gravel Trail (~1.1 m/s)</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/t1-forest-gravel-trail-11.mov">
+          </video>
+        </div>
+      </div>
     </div>
+
+    <!-- Running -->
+    <h3 class="gait-row-title">
+      Running Gaits:
+    </h3>
+
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Run through Grass (~2.8 m/s)</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/t1_run_grass_28.mov">
+          </video>
+        </div>
+      </div>
+
+
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Running over Rocks and Gravel (~2.5 m/s)</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/t1-robomars-25.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Running to Walking (~ 2.4 m/s -> 0.5 m/s)</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/t1-run2walk.mov">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    
   </div>
 </section>
 
 
 <section class="section">
-  <div class="container" style="max-width: 960px; margin: 0 auto;">
+  <div class="container gait-section-container">
+
+    <h2 class="title is-2" style="text-align: center; padding-bottom: 20px;">
+      More Examples on Universality over Different Embodiments
+    </h2>
+
+    <!-- Walking/Jogging -->
+    <h3 class="gait-row-title">
+      GaitSpan are evaluated on five type of robots, with three types in real world:
+    </h3>
+
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
-          Fall Damage Mitigation
-        </h2>
-        <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
-          We compare the quantitative performance of <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> with two <strong style="color: #e63946; font-weight: 800;">baselines</strong> that uses <em>passive control when fall happens (i.e., Freezing Mode) and pure tracking (i.e., sparse key-frame tracking)</em>, on the simulator.
-        </p> 
-              <div class="column">
-              <!--   <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"></h3> -->
-                <video autoplay muted loop playsinline controls preload="auto" 
-                  src="./static/videos/sim-mitigation.mov" 
-                  style="border-radius:10px; display:block; margin: 0 auto; max-height: 66vh; ">
-                </video>
-              </div> 
-            </div>
-          </td>
-        </tr>
-      </div> 
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Booster T1 </div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/t1.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Booster K1 </div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/k1.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="video-card">
+          <div class="video-title">Unitree G1</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/g1.mov">
+          </video>
+        </div>
+      </div>
     </div>
+
+ 
+
+    
   </div>
 </section>
 
 
-<section class="section">
-  <div class="container" style="max-width: 960px; margin: 0 auto;">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
-          Fall Recovery
-        </h2>
-        <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
-          1) We evaluate real-world performance of <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> on different terrian environments.
-        </p>        
-        <tr>
-          <td>
-            <div class="columns">
-              <div class="column" style="text-align: center;">
-                <h3 class="title is-3" style="margin-bottom: 10px; font-size: x-large;">Flat Mat</h3>
-                <video autoplay muted loop playsinline controls preload="auto"
-                      src="./static/videos/flat.mov"
-                      width="100%"
-                      style="border-radius:10px;">
-                </video>
-              </div>
-              <div class="column" style="text-align: center;">
-                <h3 class="title is-3" style="margin-bottom: 10px; font-size: x-large;">Grass</h3>
-                <video autoplay muted loop playsinline controls preload="auto"
-                      src="./static/videos/grass-recover.mov"
-                      width="100%"
-                      style="border-radius:10px;">
-                </video>
-              </div>
-            </div>
-            <br>
-            
-        <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
-          2) We compare the real-world performance of <strong style="color: #13c253; font-weight: 800;">GaitSpan</strong> with a <strong style="color: #e63946; font-weight: 800;"> baseline</strong> that uses given trajectory (i.e., Unitree G1 Controller) on outdoor environments. </p>  
-          <div class="columns is-vcentered">
-            <div class="column has-text-centered">
-              <h3 class="title is-2" style="margin-bottom: 10px; font-size: x-large;">
-                Unitree G1 Controller
-              </h3>
-              <video autoplay muted loop playsinline controls preload="auto"
-                     src="./static/videos/g1-wave-1.mov"
-                     style="width: 100%; border-radius:10px;">
-              </video>
-            </div>
-            <div class="column has-text-centered">
-              <h3 class="title is-2" style="margin-bottom: 10px; font-size: x-large;">
-                GaitSpan (Ours)
-              </h3>
-              <video autoplay muted loop playsinline controls preload="auto"
-                     src="./static/videos/ours-wave-1.mov"
-                     style="width: 100%; border-radius:10px;">
-              </video>
-            </div>
-          </div>
-            <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section>
+
+
 
 
 <section class="section">
