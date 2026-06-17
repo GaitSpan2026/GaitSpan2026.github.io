@@ -321,13 +321,15 @@
 
       <div class="column is-one-third">
         <div class="video-card">
-          <div class="video-title">Jog on a Forest Gravel Trail (~1.1 m/s)</div>
+          <div class="video-title">Walking to Jogging (~0.5 m/s -> 1.1 m/s)</div>
           <video autoplay muted loop playsinline controls preload="auto"
-                 src="./static/videos/t1-forest-gravel-trail-11.mov">
+                 src="./static/videos/t1-grassy-forest-0511.mov">
           </video>
         </div>
       </div>
     </div>
+
+
 
     <!-- Running -->
     <h3 class="gait-row-title">
@@ -364,9 +366,48 @@
       </div>
     </div>
 
+<!-- long-distance jogging -->
+<div class="columns is-vcentered" style="margin-top: 70px;">
+
+  <!-- left text -->
+<!-- long-distance jogging -->
+<div class="columns is-vcentered" style="margin-top: 70px;">
+
+  <div class="column is-6">
+    <h3 class="title is-3" style="margin-bottom: 18px; white-space: nowrap;">
+      Sustained Gait over a Long Distance
+    </h3>
+
+  <p style="font-size: 1.05rem; line-height: 1.7; color: #555;">
+    GaitSpan supports stable gait execution over long-horizon locomotion.
+    As shown on the right, Booster T1 sustains a jogging gait at ~1.1 m/s
+    along a sloped forest gravel trail. Note that, the human operator in the video holds the safety tether
+    only as a precaution and does not apply force during the trial.
+  </p>
+  </div>
+
+  <div class="column is-6">
+    <div class="video-card">
+      <div class="video-title">
+        Jogging on a Forest Gravel Trail (~1.1 m/s)
+      </div>
+
+      <video autoplay muted loop playsinline controls preload="auto"
+             src="./static/videos/t1-forest-gravel-trail-11.mov">
+      </video>
+    </div>
+  </div>
+
+</div>
+   
     
   </div>
+
+
+
 </section>
+
+
 
 
 <section class="section">
@@ -410,7 +451,82 @@
       </div>
     </div>
 
- 
+
+      <style>
+      .video-title-small {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        z-index: 2;
+        padding: 2px 6px;
+        background: rgba(255, 255, 255, 0.68);
+        color: #222;
+        font-size: 13px;
+        line-height: 1.1;
+        pointer-events: none;
+
+        white-space: nowrap;   /* keep one line */
+        max-width: none;       /* do not force wrapping */
+  }
+  </style>
+
+      <!-- Simulation embodiments -->
+    <h3 class="gait-row-title" style="margin-top: 55px;">
+      Five humanoid robot embodiments in simulation:
+    </h3>
+
+    <p class="sim-note">
+        The following videos show zero-shot sim-to-sim transfer from IsaacGym to MuJoCo across different velocity commands, from 0.5 m/s to 1.5 m/s and 2.5 m/s.
+    </p>
+
+    <div class="columns is-centered embodiment-row">
+
+      <div class="column is-one-fifth">
+        <div class="video-card">
+          <div class="video-title-small">Booster T1<br>23 DoF</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/sim-t1-23.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-fifth">
+        <div class="video-card">
+          <div class="video-title-small">Booster T1<br>29 DoF</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/sim-t1-29.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-fifth">
+        <div class="video-card">
+          <div class="video-title-small">Booster K1<br>22 DoF</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/sim-k1-22.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-fifth">
+        <div class="video-card">
+          <div class="video-title-small">Unitree G1<br>23 DoF</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/sim-g1-23.mov">
+          </video>
+        </div>
+      </div>
+
+      <div class="column is-one-fifth">
+        <div class="video-card">
+          <div class="video-title-small">Unitree G1<br>29 DoF</div>
+          <video autoplay muted loop playsinline controls preload="auto"
+                 src="./static/videos/sim-g1-29.mov">
+          </video>
+        </div>
+      </div>
+
+    </div>
 
     
   </div>
@@ -540,11 +656,10 @@
           color: #4a4a4a;
         ">
           <p>
-            Locomotion is how a body carries itself through the world by regulating
-            contact, balance, and momentum. In humans, walking, jogging, and running
-            are not isolated behaviors, but related regimes of a growing motor skill.
-            This suggests a broader view of skill acquisition: new behaviors could be
-            reused and extended from existing motor structure, rather than be learned from scratch.
+            Locomotion is how a body carries itself through the world by regulating contact, balance, and momentum. 
+            In humans, walking, jogging, and running are not isolated behaviors, but related regimes of a growing motor skill. 
+            Their shared underlying locomotion structures can be reused and extended, suggesting a broader view of skill acquisition: 
+            new behaviors need not be learned from scratch, but can emerge by building upon existing motor structures.
           </p>
 
           <p>
